@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kraken.Interfaces.Dynamic.Library", "Kraken.Interfaces.Dynamic.Library\Kraken.Interfaces.Dynamic.Library.csproj", "{51BAAF56-AFC3-4A1A-B5CB-26290080580B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{3A5F4206-9131-412B-98EB-7514A736C2B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Customers", "Customers", "{3C87300D-C7C7-432C-9B48-371C0EBF836D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{A3D532FE-C3C0-457D-9550-6367098C152F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{35B47C83-F28F-4C9D-B6C0-69F0A54378D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSV", "CSV", "{4CE05949-5E12-487B-B49B-AFD3CB19B2C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.DataStore.CSV", "DataStore.CSV\People.DataStore.CSV.csproj", "{3A1685A3-721D-4EA4-9E20-8E14C652E701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.DataStore.SQL", "People.DataStore.SQL\People.DataStore.SQL.csproj", "{79B26CDD-FDEC-48B4-BB80-FF077088ADD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.DataStore.Service.Library", "People.DataStore.Service.Library\People.DataStore.Service.Library.csproj", "{28729679-13C2-4103-82D2-3DD8FC0E9DB2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F10614CE-525C-49CB-86DF-9D393E66617A} = {F10614CE-525C-49CB-86DF-9D393E66617A}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "People.DataStore.Service.API", "People.DataStore.Service.API\", "{F10614CE-525C-49CB-86DF-9D393E66617A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{51baaf56-afc3-4a1a-b5cb-26290080580b}|Kraken.Interfaces.Dynamic.Library.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64292"
+		Debug.AspNetCompiler.PhysicalPath = "People.DataStore.Service.API\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64292\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64292"
+		Release.AspNetCompiler.PhysicalPath = "People.DataStore.Service.API\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64292\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64292"
+		SlnRelativePath = "People.DataStore.Service.API\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kraken.WPF.Consumer", "Kraken.WPF.Consumer\Kraken.WPF.Consumer.csproj", "{DD951327-243B-4F1B-8DB1-4EE19FD72511}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51BAAF56-AFC3-4A1A-B5CB-26290080580B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BAAF56-AFC3-4A1A-B5CB-26290080580B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BAAF56-AFC3-4A1A-B5CB-26290080580B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BAAF56-AFC3-4A1A-B5CB-26290080580B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A1685A3-721D-4EA4-9E20-8E14C652E701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1685A3-721D-4EA4-9E20-8E14C652E701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1685A3-721D-4EA4-9E20-8E14C652E701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1685A3-721D-4EA4-9E20-8E14C652E701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B26CDD-FDEC-48B4-BB80-FF077088ADD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B26CDD-FDEC-48B4-BB80-FF077088ADD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B26CDD-FDEC-48B4-BB80-FF077088ADD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B26CDD-FDEC-48B4-BB80-FF077088ADD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28729679-13C2-4103-82D2-3DD8FC0E9DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28729679-13C2-4103-82D2-3DD8FC0E9DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28729679-13C2-4103-82D2-3DD8FC0E9DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28729679-13C2-4103-82D2-3DD8FC0E9DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10614CE-525C-49CB-86DF-9D393E66617A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10614CE-525C-49CB-86DF-9D393E66617A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10614CE-525C-49CB-86DF-9D393E66617A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10614CE-525C-49CB-86DF-9D393E66617A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{DD951327-243B-4F1B-8DB1-4EE19FD72511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD951327-243B-4F1B-8DB1-4EE19FD72511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD951327-243B-4F1B-8DB1-4EE19FD72511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD951327-243B-4F1B-8DB1-4EE19FD72511}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51BAAF56-AFC3-4A1A-B5CB-26290080580B} = {3A5F4206-9131-412B-98EB-7514A736C2B0}
+		{A3D532FE-C3C0-457D-9550-6367098C152F} = {3C87300D-C7C7-432C-9B48-371C0EBF836D}
+		{35B47C83-F28F-4C9D-B6C0-69F0A54378D1} = {3C87300D-C7C7-432C-9B48-371C0EBF836D}
+		{4CE05949-5E12-487B-B49B-AFD3CB19B2C9} = {3C87300D-C7C7-432C-9B48-371C0EBF836D}
+		{3A1685A3-721D-4EA4-9E20-8E14C652E701} = {4CE05949-5E12-487B-B49B-AFD3CB19B2C9}
+		{79B26CDD-FDEC-48B4-BB80-FF077088ADD4} = {35B47C83-F28F-4C9D-B6C0-69F0A54378D1}
+		{28729679-13C2-4103-82D2-3DD8FC0E9DB2} = {A3D532FE-C3C0-457D-9550-6367098C152F}
+		{F10614CE-525C-49CB-86DF-9D393E66617A} = {A3D532FE-C3C0-457D-9550-6367098C152F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A834999-1760-451D-A9F8-45600EA04EF4}
+	EndGlobalSection
+EndGlobal
